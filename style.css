@@ -1,0 +1,232 @@
+@import url('https://fonts.cdnfonts.com/css/fox-on-the-run');  /* https://www.cdnfonts.com/fox-on-the-run.font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fox on the Run', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overscroll-behavior: none;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px; /** 3% **/
+    background: linear-gradient(to top, rgb(0, 26, 82), rgba(17, 17, 17, 0));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.main .image-container {
+    padding: 10px;
+}
+
+.main .image-container h1 {
+    color: rgb(0, 188, 212);
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+
+.main .image-container p {
+    color: rgba(255, 255, 255, 0.7);
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 23px;
+}
+
+.main .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50px;
+    border-radius: 20px;
+    background: rgba(0, 247, 255, 0.144);
+}
+
+.main .input .talk {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.main .input .talk i {
+    font-size: 20px;
+    color: #aed0d0;
+}
+
+.main .input .content {
+    color: #aed0d0;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+
+
+
+/*----------------------------------------------------------------------------------------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------------------------------------------------------------------------------------*/
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+@media (min-width: 0px) and (max-width: 480px) {
+  .main {
+    padding: 20px; /** 2% **/
+  }
+  .main .image-container {
+    padding: 6.7px;
+  }
+  .main .image-container h1 {
+    margin-bottom: 6.7px;
+    font-size: 32px;
+  }
+  .main .image-container p {
+    margin-bottom: 26.7px;
+    font-size: 18px;
+  }
+  .main .input {
+    width: 60vw;
+    height: 33.3px;
+    border-radius: 13.3px;
+  }
+  .main .input .talk {
+    width: 33.3px;
+    height: 33.3px;
+    font-size: 15.3px;
+  }
+  .main .input .talk i {
+    font-size: 15.3px;
+  }
+  .main .input .content {
+      font-size: 15.3px;
+      margin-right: 13.3px;
+  }
+}
+
+
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+@media (min-width: 481px) and (max-width: 767px) {
+  .main {
+    padding: 25px; /** 2% **/
+  }
+  .main .image-container {
+    padding: 8.3px;
+  }
+  .main .image-container h1 {
+    margin-bottom: 8.3px;
+    font-size: 41.7px;
+  }
+  .main .image-container p {
+    margin-bottom: 33.3px;
+    font-size: 19.2px;
+  }
+  .main .input {
+    width: 40vw;
+    height: 41.7px;
+    border-radius: 16.7px;
+  }
+  .main .input .talk {
+    width: 41.7px;
+    height: 41.7px;
+    font-size: 12.5px;
+  }
+  .main .input .talk i {
+    font-size: 16.7px;
+  }
+  .main .input .content {
+      font-size: 16.7px;
+      margin-right: 16.7px;
+  }
+}
+
+
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main {
+    padding: 25px; /** 2% **/
+  }
+  .main .image-container {
+    padding: 8.3px;
+  }
+  .main .image-container h1 {
+    margin-bottom: 8.3px;
+    font-size: 41.7px;
+  }
+  .main .image-container p {
+    margin-bottom: 33.3px;
+    font-size: 19.2px;
+  }
+  .main .input {
+    width: 40vw;
+    height: 41.7px;
+    border-radius: 16.7px;
+  }
+  .main .input .talk {
+    width: 41.7px;
+    height: 41.7px;
+    font-size: 12.5px;
+  }
+  .main .input .talk i {
+    font-size: 16.7px;
+  }
+  .main .input .content {
+      font-size: 16.7px;
+      margin-right: 16.7px;
+  }
+}
+
+
+
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
+
+
+
+  /* 
+    ##Device = Desktops
+    ##Screen = 1281px to higher resolution desktops
+  */
+@media (min-width: 1281px) {
+
+}
